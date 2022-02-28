@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="MyCalculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyCalculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Background="#FF292727">
+            <TextBox x:Name="numinput" Canvas.Left="360" TextWrapping="Wrap" Text="" Canvas.Top="111" Width="215" Height="42" TextAlignment="Right" BorderBrush="#FF131212" Background="#FF131212" FontFamily="Poppins"/>
+            <TextBox x:Name="answerdisplay" Canvas.Left="360" TextWrapping="Wrap" Text="" Canvas.Top="153" Width="215" Height="42" TextAlignment="Right" BorderBrush="#FF131212" Background="#FF131212" FontFamily="Poppins"/>
+
+            <Button x:Name="num7" Content="7" Canvas.Left="360" Canvas.Top="200" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num7_Click"/>
+            <Button x:Name="num8" Content="8" Canvas.Left="415" Canvas.Top="200" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num8_Click"/>
+            <Button x:Name="num9" Content="9" Canvas.Left="470" Canvas.Top="200" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num9_Click"/>
+            <Button x:Name="num4" Content="4" Canvas.Left="360" Canvas.Top="245" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num4_Click"/>
+            <Button x:Name="num5" Content="5" Canvas.Left="415" Canvas.Top="245" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num5_Click"/>
+            <Button x:Name="num6" Content="6" Canvas.Left="470" Canvas.Top="245" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num6_Click"/>
+            <Button x:Name="num1" Content="1" Canvas.Left="360" Canvas.Top="290" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num1_Click"/>
+            <Button x:Name="num2" Content="2" Canvas.Left="415" Canvas.Top="290" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num2_Click"/>
+            <Button x:Name="num3" Content="3" Canvas.Left="470" Canvas.Top="290" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num3_Click"/>
+            <Button x:Name="num0" Content="0" Canvas.Left="415" Canvas.Top="335" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF060202" FontFamily="Poppins" Click="Num0_Click"/>
+
+            <Button x:Name="divide" Content="/" Canvas.Left="525" Canvas.Top="200" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Divide_Click"/>
+            <Button x:Name="multiply" Content="x" Canvas.Left="525" Canvas.Top="245" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Multiply_Click"/>
+            <Button x:Name="subtract" Content="-" Canvas.Left="525" Canvas.Top="290" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Subtract_Click"/>
+            <Button x:Name="add" Content="+" Canvas.Left="525" Canvas.Top="335" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Add_Click" RenderTransformOrigin="0.6,0.25"/>
+            <Button x:Name="dot" Content="." Canvas.Left="470" Canvas.Top="335" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Dot_Click"/>
+            <Button x:Name="clear" Content="C" Canvas.Left="360" Canvas.Top="335" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Clear_Click"/>
+
+            <Button x:Name="equals" Content="=" Canvas.Left="415" Canvas.Top="380" Height="40" Width="160" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Equals_Click"/>
+            <Button x:Name="percent" Content="%" Canvas.Left="360" Canvas.Top="380" Height="40" Width="50" Foreground="#FFF9F9F9" Background="#FF131212" FontFamily="Poppins" Click="Percent_Click"/>
+        </Canvas>
+
+    </Grid>
+    
+</Page>
